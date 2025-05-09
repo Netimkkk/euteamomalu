@@ -21,20 +21,21 @@
     const naoBtn = document.getElementById('nao');
     const simBtn = document.getElementById('sim');
 
-    naoBtn.addEventListener('mouseenter', () => {
-      tentativas++;
-      if (tentativas < 5) {
-        const maxX = window.innerWidth - naoBtn.offsetWidth;
-        const maxY = window.innerHeight - naoBtn.offsetHeight;
-        const randomX = Math.floor(Math.random() * maxX);
-        const randomY = Math.floor(Math.random() * maxY);
-        naoBtn.style.position = 'absolute';
-        naoBtn.style.left = `${randomX}px`;
-        naoBtn.style.top = `${randomY}px`;
-      } else {
-        window.location.href = 'fotos.html';
-      }
-    });
+naoBtn.addEventListener('click', () => {
+  tentativas++;
+  if (tentativas < 5) {
+    const maxX = window.innerWidth - naoBtn.offsetWidth;
+    const maxY = window.innerHeight - naoBtn.offsetHeight;
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+    naoBtn.style.position = 'absolute';
+    naoBtn.style.left = `${randomX}px`;
+    naoBtn.style.top = `${randomY}px`;
+  } else {
+    window.location.href = 'fotos.html';
+  }
+});
+
 
     simBtn.addEventListener('click', () => {
       alert('AEEEEEEEEE ACEITOOOOOOOOU KKKKKKKKKK MEU AMOOOR ❤️❤️❤️');
