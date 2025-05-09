@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quer namorar comigo?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Você aceita namorar comigo?</h1>
+    <div class="botoes">
+      <button id="sim">Sim 💖</button>
+      <button id="nao">Não ❌</button>
+    </div>
+  </div>
+
+  <script>
+    let tentativas = 0;
+
+    const naoBtn = document.getElementById('nao');
+    const simBtn = document.getElementById('sim');
+
+    naoBtn.addEventListener('mouseenter', () => {
+      tentativas++;
+      if (tentativas < 5) {
+        const maxX = window.innerWidth - naoBtn.offsetWidth;
+        const maxY = window.innerHeight - naoBtn.offsetHeight;
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+        naoBtn.style.position = 'absolute';
+        naoBtn.style.left = `${randomX}px`;
+        naoBtn.style.top = `${randomY}px`;
+      } else {
+        window.location.href = 'fotos.html';
+      }
+    });
+
+    simBtn.addEventListener('click', () => {
+      alert('AEEEEEEEEE ACEITOOOOOOOOU KKKKKKKKKK MEU AMOOOR ❤️❤️❤️');
+    });
+  </script>
+</body>
+</html>

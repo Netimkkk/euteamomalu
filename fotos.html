@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nós dois ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .galeria img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .mensagem {
+      max-width: 800px;
+      margin: 30px auto;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -50px;
+  font-size: 30px;
+  animation: floatUp 6s infinite ease-in;
+  color: purple;
+  opacity: 0.6;
+}
+
+.heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+.heart:nth-child(2) { left: 25%; animation-delay: 1s; }
+.heart:nth-child(3) { left: 40%; animation-delay: 2s; }
+.heart:nth-child(4) { left: 60%; animation-delay: 3s; }
+.heart:nth-child(5) { left: 75%; animation-delay: 4s; }
+.heart:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-300px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="hearts">
+        <span class="heart">💜</span>
+        <span class="heart">💜</span>
+        <span class="heart">💜</span>
+        <span class="heart">💜</span>
+        <span class="heart">💜</span>
+        <span class="heart">💜</span>
+      </div>
+      
+  <h1>Alguns momentos especiais amor</h1>
+  <div class="galeria">
+
+  </div>
+
+  <img src="2e32ee8f-1f15-4418-abea-67bdeffcd5e0.png" alt="foto3" />
+
+  <h1>inesquecível...</h1>
+
+  <img src="9202101a-b4fc-4545-a6e0-b6d4682176f9.png" alt="foto4" />
+  <h1>onde tudo começou... minina réa</h1>
+
+  <img src="430942dd-f657-4d14-b4a3-47f50790cc36.png" alt="foto2" />
+  <h2>Tão gatinha a minha princesa 🙈</h2>
+
+  <img src="40b51571-6af7-4619-8b66-d3241c0db1fa.png" alt="foto1" />
+  <h1>Essa viagem foi SIMPLESMENTE INCRÍVEL</h1>
+  <h1>muito obrigado por marcar a minha mente meu amor</h1>
+
+
+  <div class="mensagem">
+    <img src="49c72e5b-e130-4183-a095-17d8ef204e2e.png" alt="foto5" />
+    <p>
+      Desde que você apareceu na minha vida, tudo ficou mais bonito e mais leve. Cada momento ao seu lado é especial, e tudo que eu quero é continuar criando memórias com você. Você é incrível, e eu sou muito sortudo por te ter. <br><br>
+      Obrigado por tudo! Te amo muito! 💕
+    </p>
+  </div>
+
+  <div class="repertorio">
+    <h2>
+      - <a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" style="color: #ff66a3; text-decoration: none;">
+        Você é a estrela que transforma coisas normais em extraordinárias
+      </a> -> Boy With Luv
+    </h2>
+  </div>
+
+</body>
+</html>
