@@ -23,7 +23,7 @@
 
 naoBtn.addEventListener('click', () => {
   tentativas++;
-  if (tentativas < 5) {
+  if (tentativas < 20) {
     const maxX = window.innerWidth - naoBtn.offsetWidth;
     const maxY = window.innerHeight - naoBtn.offsetHeight;
     const randomX = Math.floor(Math.random() * maxX);
