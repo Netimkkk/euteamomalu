@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quer namorar comigo?</title>
+  <title>Malu meu amor <3</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Você aceita CASAR comigo?</h1>
+    <h1>Você aceita namorar comigo?</h1>
     <div class="botoes">
       <button id="sim">Sim 💖</button>
       <button id="nao">Não ❌</button>
@@ -22,9 +22,8 @@
     const simBtn = document.getElementById('sim');
 
 naoBtn.addEventListener('click', () => {
-  alert('VAI CASAR COMIGO SIM')
   tentativas++;
-  if (tentativas < 20) {
+  if (tentativas < 5) {
     const maxX = window.innerWidth - naoBtn.offsetWidth;
     const maxY = window.innerHeight - naoBtn.offsetHeight;
     const randomX = Math.floor(Math.random() * maxX);
